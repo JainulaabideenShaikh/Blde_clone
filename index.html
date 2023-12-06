@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLDE</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .bar{
+            height: 90px;
+            width: 1050px;
+            display: flex;
+            gap: 25px;
+            
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+        .bar .fee, .alumni, .iqac, .naac, .isr, .documents, .gallery, .vtu{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 200px;
+        }
+        .logo .img1{
+            display: flex;
+            width: 60%;
+            margin-left: 80px;
+            margin-top: -30px;
+        }
+        .logo .img2{
+            height: 130px;
+
+        }
+        .main{
+            height: 100px;
+            width: 100%;
+            background-color:brown;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            color: white;
+            font-size: 25px;
+        }
+        .main .about, .academic, .placements, .research, .facilities{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .ai img{
+            display: flex;
+            margin-left: 80px;
+            height: 600px;
+            width: 90%;
+        }
+        .details{
+            height: 130px;
+            width: 100%;
+            background-color: brown;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        .details .cs,.qd, .ep, .iod{
+            font-size: 22px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            margin-left: 55px;
+            text-align: justify;
+        }
+        .news_update{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .news_update p{
+            font-size: 38.36px;
+            font-family: 'Raleway', sans-serif;   
+              
+        }
+        #carouselExampleAutoplaying{
+            width: 60%;
+            margin-left: 350px;
+        }
+        #carouselExampleAutoplaying img{
+            height: 750px;
+            /* width: 250px; */
+
+        }
+        .blde_details{
+            display: flex;
+            height: 450px;
+            width: 100%;
+            background-color: brown;
+            align-items: center;
+            justify-content: center;
+            gap: 55px;
+        }
+        .imgd img{
+            height: 400px;
+            width: 430px;
+            margin-left: 25px;
+            border: 1px solid white;
+        }
+        .textd{
+            width: 750px;
+            color: white;
+            font-size: 30px;
+            font-family: 'Raleway', sans-serif;
+            text-align: justify;
+        }
+        .black{
+            display: flex;
+            align-items: center;
+            height: 250px;
+            width: 100%;
+            background-color: #434242;
+            margin-top: 75px;
+            
+        }
+        .contactblde h3{
+            display: flex;
+            margin-left: 30px;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+            color: white;
+            
+        }
+        .contactblde b{
+            display: flex;
+            margin-left: 30px;
+            font-size: 16px;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            color: white;
+        }
+        .contactblde p{
+            margin-left: 30px;
+
+            font-size: 16px;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <div class="fee">
+            <p>Fee Payment</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="alumni">
+            <p>Alumni</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="iqac">
+            <p>IQAC</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="naac">
+            <p>NACC</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="isr">
+            <p>ISR</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="nirf">
+            <p>NIRF</p>
+        </div>
+        <div class="documents">
+            <p>Documents</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="grievance">
+            <p>Grievance</p>
+        </div>
+        <div class="careers">
+            <p>Careers</p>
+        </div>
+        <div class="gallery">
+            <p>Gallery</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="vtu">
+            <p>VTU</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+    </div>
+    <div class="logo">
+        <img src="blde.jpg" alt="" class="img1">
+        <img src="naac-logo.png" alt="" class="img2">
+    </div>
+    <div class="main">
+        <div class="about">
+            <p>About</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="academic">
+            <p>Academic</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="admissions">
+            <p>Admissions</p>
+        </div>
+        <div class="campuslife">
+            <p>Campus Life</p>
+        </div>
+        <div class="placements">
+            <p>Placements</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="research">
+            <p>Research</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="facilities">
+            <p>Facilities</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </div>
+        <div class="news">
+            <p>News & Updates</p>
+        </div>
+        <div class="Contacts">
+            <p>Contact Us</p>
+        </div>
+    </div>
+    <div class="ai">
+        <img src="ai.jpg" alt="">
+    </div>
+    <div class="details">
+        <div class="cs">
+            <p>Campus spread over an area of 14.9 acres</p>
+        </div>
+        <span style="border-left: 2px solid white; height: 70px; margin: 0 10px; display: inline-block; opacity:1.5"></span>
+        <div class="qd">
+            <p>Qualified and dedicated team of faculty</p>
+        </div>
+        <span style="border-left: 2px solid white; height: 70px; margin: 0 10px; display: inline-block; opacity:1.5"></span>
+        <div class="ep">
+            <p>Excellent Placement Record (Highest Package: 24 LPA)</p>
+        </div>
+        <span style="border-left: 2px solid white; height: 70px; margin: 0 10px; display: inline-block; opacity:1.5"></span>
+        <div class="iod">
+            <p>Industry-oriented
+                Education</p>
+        </div>
+    </div>
+    <div class="news_update">
+        <p>News updates</p>
+    </div>
+    <!--  -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="news3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="news5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="news7.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="blde_details">
+        <div class="imgd">
+            <img src="bldeacet.jpg" alt="">
+        </div>
+        <div class="textd">
+            <p> &nbsp;B L D E A C E T <br>
+                <span style="border-bottom: 2px solid white; width: 270px; margin: 0 10px; display: inline-block; opacity:1.5"></span>
+            </p>
+            
+            <p>"Over the last 100 years, engineering education has witnessed significant shifts, evolved to include a large number of specialties, and seen its goals constantly being redefined. The importance of different skills such as design, analytics, and modeling in the context of a particular discipline is continuously debated."</p>
+        </div>
+    </div>
+
+    </div>
+    <div class="black">
+        <div class="contactblde">
+            <h3>CONTACT INFO</h3>
+            <b>BLDEA's V.P. Dr. P.G. Halakatti
+                College of Engineering and Technology</b>
+            <p>Ashram Road, Vijayapura-586101 <br>
+
+                Phone: 08352-261120 <br>
+                
+                Fax: 08352-262945 <br>
+                
+                Email: principal@bldeacet.ac.in <br>
+                
+                Web: bldeacet.ac.in</p>
+        </div>
+    </div>
+</body>
+</html>
